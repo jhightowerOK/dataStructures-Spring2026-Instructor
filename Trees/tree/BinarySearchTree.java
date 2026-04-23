@@ -39,7 +39,7 @@ public class BinarySearchTree {
 	}
 	
 	public void preOrderTraversal(Node root) {
-		// Left-Root-Right
+		// Root-Left-Right
 		if(root!=null) {
 			System.out.printf(" %d ", root.data);
 			inOrderTraversal(root.left);
@@ -48,7 +48,7 @@ public class BinarySearchTree {
 	}
 	
 	public void postOrderTraversal(Node root) {
-		// Left-Root-Right
+		// Left-Right-Root
 		if(root!=null) {
 			inOrderTraversal(root.left);
 			inOrderTraversal(root.right);
